@@ -20,8 +20,29 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
+```
+
+server.py
+import socket
+HOST, PORT = '127.0.0.1', 65432
+with socket.create_server((HOST, PORT)) as s:
+    conn, addr = s.accept()
+    with conn:
+        print(f'Connected by {addr}')
+        while data := conn.recv(1024):
+            conn.sendall(data)
+
+client.py
+import socket
+HOST, PORT = '127.0.0.1', 65432
+with socket.create_connection((HOST, PORT)) as s:
+    s.sendall(b'Sandhiya M, 212224220086')
+    print(f'Received: {s.recv(1024)!r}')
+
+```
 
 ## OUTPUT:
+
 
 ## RESULT:
 The program is executed successfully
