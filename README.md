@@ -41,8 +41,10 @@ with socket.create_connection((HOST, PORT)) as s:
 
 ```
 
+
 ## OUTPUT:
 ![Screenshot 2025-03-03 140744](https://github.com/user-attachments/assets/023d2aca-a7c8-4e68-8c5c-2a3ca5a96889)
+
 ![Screenshot 2025-03-03 140734](https://github.com/user-attachments/assets/41715504-ac34-4e00-8767-370817c83a43)
 
 
